@@ -1,4 +1,4 @@
-### Hi there 👋,<br /> I am *Samandar Abdugafforov*.
+### Hi there <img src="https://raw.githubusercontent.com/samandareo/samandareo/master/wave.gif" width="30px">,<br /> I am *Samandar Abdugafforov*.
 <hr>
 ▫️Video Creator📹<br />
 ▫️Frontend Developer🧑‍💻<br />
