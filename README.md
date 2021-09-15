@@ -12,5 +12,3 @@
 <br />
 <br />
 [![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&theme=algolia&include_all_commits)](https://github.com/samandareo/github-readme-stats)
-
-[![Telegram](https://badgen.net/badge/Telegram/status/blue?icon=telegram&color_name:blue)](https://t.me/samandareo)
