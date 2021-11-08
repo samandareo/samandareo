@@ -8,6 +8,8 @@
 <br />
 <hr>
 
+<br />
+
 ## 🔨 Languages and Tools:
 
 [<img align="left" alt="HTML" width="26px" src="./techs/html.svg" />][html]
@@ -41,6 +43,8 @@
 [<img align="left" alt="Social Engineering" width="26px" src="./techs/social engineering.svg" />][socialeng]
 
 <br />
+<br />
+
 <br />
 
 <details>
