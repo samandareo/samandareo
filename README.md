@@ -8,7 +8,7 @@
 <br />
 <hr>
 
-<i align="center">![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact)</i>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact">
 <br />
 <br />
 ![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&theme=algolia)
