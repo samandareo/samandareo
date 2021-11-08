@@ -11,5 +11,5 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact)](https://github.com/samandareo/samandareo)
 <br />
 <br />
-[![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&theme=algolia&show_icons=true)](https://github.com/samandareo/samandareo)
+[![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&theme=algolia)](https://github.com/samandareo/samandareo)
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=samandareo&theme=algolia" style="text-align : center;">
