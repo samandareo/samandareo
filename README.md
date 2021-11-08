@@ -7,8 +7,16 @@
 🔰Founder , CEO , Developer at UzCleverTeam👥
 <br />
 <hr>
+<details>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact">
+  <summary>⚜ Top Langs</summary>
+  
+  <br />
+  
+  ![Top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact)
+  
+</details>
+
 <br />
 <br />
 ![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&theme=algolia)
