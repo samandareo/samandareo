@@ -70,7 +70,9 @@
 
 ![Snake animation](https://github.com/samandareo/samandareo/blob/main/snake.svg)
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=samandareo&repo=Boriga_Baraka)
+---
+
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=samandareo&repo=Boriga_Baraka&theme=agolia&show_icons=true)
 
 
 
