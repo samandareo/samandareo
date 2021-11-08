@@ -64,15 +64,12 @@
 
 
 
-![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&theme=algolia&include_all_commits=true)
+![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&theme=algolia&include_all_commits=false)
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Samandareo&theme=algolia&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
 
 ![Snake animation](https://github.com/samandareo/samandareo/blob/main/snake.svg)
 
----
-
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=samandareo&repo=Boriga_Baraka&theme=agolia&show_icons=true)
 
 
 
