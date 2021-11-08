@@ -12,4 +12,4 @@
 <br />
 <br />
 [![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&theme=algolia&show_icons=true)](https://github.com/samandareo/samandareo)
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=samandareo&theme=algolia" style="text-align : center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=samandareo&theme=algolia" style="text-align : center;">
