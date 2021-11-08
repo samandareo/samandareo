@@ -62,3 +62,37 @@
 
 
 ![Snake animation](https://github.com/samandareo/samandareo/blob/main/snake.svg)
+
+
+
+
+[html]: https://www.w3schools.com/html/default.asp
+[css]: https://www.w3schools.com/css/default.asp
+[javascript]: https://www.javascript.com/
+[nodejs]: https://nodejs.org/en/
+[denoland]: https://deno.land
+[python]: https://www.python.org/
+[java]: https://openjdk.java.net/
+[kotlin]: https://kotlinlang.org/
+[swift]: https://swift.org/
+[csharp]: https://docs.microsoft.com/en-us/dotnet/csharp/
+[cplusplus]: https://www.cplusplus.com/
+[c]: https://www.learn-c.org/
+[mongodb]: https://www.mongodb.com/
+[postgresql]: https://www.postgresql.org/
+[docker]: https://www.docker.com/
+[vscode]: https://code.visualstudio.com/
+[jetbrains]: https://www.jetbrains.com/
+[zsh]: https://ohmyz.sh/
+[powershell]: https://docs.microsoft.com/en-us/powershell/
+[git]: https://git-scm.com/
+[github]: https://github.com
+[heroku]: https://www.heroku.com/
+[aws]: https://aws.amazon.com/
+[android]: https://www.android.com/
+[ios]: https://www.apple.com/ios/ios-14/
+[linux]: https://www.linux.org/
+[macos]: https://www.apple.com/macos/big-sur/
+[windows]: https://www.microsoft.com/en-us/windows
+[socialeng]: https://en.wikipedia.org/wiki/Social_engineering_(security)
+
