@@ -38,7 +38,7 @@
   
   <br />
   
-  ![Top langs]([https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact](https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia&layout=compact))
+  ![Top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia)
   
 </details>
 
