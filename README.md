@@ -3,10 +3,8 @@
 
 ---
 
-▫️Video Creator📹<br />
-▫️Frontend Developer🧑‍💻<br />
-▫️Instagram mask maker🎨<br />
-🔰Founder , CEO , Developer at UzCleverTeam👥
+▫️Video Creator, Editor📹<br />
+▫️Product Oriented Developer🧑‍💻<br />
 
 ---
 
