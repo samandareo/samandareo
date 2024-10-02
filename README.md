@@ -16,15 +16,23 @@
 [<img align="left" alt="HTML" width="26px" src="./techs/html.svg" />][html]
 [<img align="left" alt="CSS" width="26px" src="./techs/css.svg" />][css]
 [<img align="left" alt="JavaScript" width="26px" src="./techs/javascript.svg" />][javascript]
+[<img align="left" alt="Python" width="26px" src="./techs/python.svg" />][python]
+[<img align="left" alt="Java" width="26px" src="./techs/java.svg" />][java]
+[<img align="left" alt="NodeJS" width="26px" src="./techs/nodejs.svg" />][nodejs]
+[<img align="left" alt="PostgreSQL" width="26px" src="./techs/postgres.svg" />][postgres]
 [<img align="left" alt="Visual Studio Code" width="26px" src="./techs/vscode.svg" />][vscode]
 [<img align="left" alt="IntelliJ IDEA" width="26px" src="./techs/intellij.svg" />][jetbrains]
 [<img align="left" alt="Powershell" width="26px" src="./techs/powershell.svg" />][powershell]
+[<img align="left" alt="Docker" width="26px" src="./techs/docker.svg" />][docker]
 [<img align="left" alt="Git" width="26px" src="./techs/git.svg" />][git]
 [<img align="left" alt="GitHub" width="26px" src="./techs/github.svg" />][github]
+[<img align="left" alt="AWS" width="26px" src="./techs/aws.svg" />][aws]
 [<img align="left" alt="Heroku" width="26px" src="./techs/heroku.svg" />][heroku]
+[<img align="left" alt="Console" width="26px" src="./techs/console.svg" />][console]
 [<img align="left" alt="Android" width="26px" src="./techs/android.svg" />][android]
 [<img align="left" alt="Linux" width="26px" src="./techs/linux.svg" />][linux]
 [<img align="left" alt="Windows" width="26px" src="./techs/windows 10.svg" />][windows]
+[<img align="left" alt="Social Engineering" width="26px" src="./techs/social engineering.svg" />][social engineering]
 
 <br />
 <br />
