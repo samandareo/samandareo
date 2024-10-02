@@ -2,9 +2,10 @@
 
 
 ---
-
-▫️Video Creator, Editor📹<br />
 ▫️Product Oriented Developer🧑‍💻<br />
+▫️Main tech-stack Backend Developer(Python)<br />
+▫️ex Front-end Developer🧑‍💻<br />
+▫️Video Creator, Editor, Youtuber📹<br />
 
 ---
 
