@@ -3,7 +3,8 @@
     python3 scripts/header.py      -> assets/header-dark.svg, assets/header-light.svg
 
 Same look as samandareo.uz: a quiet twinkling starfield, the name, the role,
-a `~ $ whoami` line with a blinking caret, and the Ulugh Beg constellation
+a `~ $ whoami` line that types and deletes a few phrases,
+the odd shooting star, and the Ulugh Beg constellation
 (drawn as his Fakhri sextant) on the right. Stdlib only.
 """
 
@@ -27,6 +28,42 @@ MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mo
 UB_OFFSET = (735, 30)
 UB_POINTS = [(40, 20), (67.8, 177.6), (120, 158.6), (162.6, 122.8), (190.4, 74.7)]
 UB_PATH = "M40 20 L67.8 177.6 L120 158.6 L162.6 122.8 L190.4 74.7 Z M40 20 L120 158.6 M40 20 L162.6 122.8"
+
+# `$ whoami` types these one after another, deletes them, and loops.
+PHRASES = ["llm systems", "ai agents on temporal", "rag pipelines", "backends that scale"]
+CH = 9.0                     # monospace advance at 15px (each phrase is pinned with textLength)
+TYPE, HOLD, DEL, GAP = 0.075, 1.9, 0.03, 0.35   # seconds per char / hold / per char / pause
+PX = 56 + 9 * CH             # phrase x, after "building "
+
+# Shooting stars: (x1, y1, x2, y2, delay, period), kept out of the text block.
+SHOOTERS = [(960, 6, 640, 66, 2.5, 11), (560, 4, 330, 52, 7.5, 13)]
+
+
+def typing_css():
+    """CSS keyframes for the typing line: one clip animation per phrase plus the caret."""
+    seq, t = [], 0.0
+    for i, ph in enumerate(PHRASES):
+        n = len(ph)
+        for k in range(n + 1):
+            seq.append((t, i, k)); t += TYPE
+        t += HOLD
+        for k in range(n - 1, -1, -1):
+            seq.append((t, i, k)); t += DEL
+        t += GAP
+    total = t
+    rules = []
+    for i, ph in enumerate(PHRASES):
+        n = len(ph)
+        frames = [f"0% {{ clip-path: inset(0 {n * CH:.0f}px 0 0); }}"]
+        for ts, j, k in seq:
+            if j == i:
+                frames.append(f"{ts / total * 100:.3f}% {{ clip-path: inset(0 {(n - k) * CH:.0f}px 0 0); }}")
+        rules.append(f"@keyframes ty{i} {{ {' '.join(frames)} }}")
+        rules.append(f".ph{i} {{ animation: ty{i} {total:.2f}s step-end infinite; }}")
+    caret = " ".join(f"{ts / total * 100:.3f}% {{ transform: translateX({k * CH:.0f}px); }}" for ts, _, k in seq)
+    rules.append(f"@keyframes cx {{ {caret} }}")
+    rules.append(f".cm {{ animation: cx {total:.2f}s step-end infinite; }}")
+    return "\n    ".join(rules)
 
 
 def stars(seed: int):
@@ -52,6 +89,17 @@ def svg(theme: str) -> str:
         f'style="--o:{0.2 + 0.6 * z:.2f};animation-delay:{d:.2f}s;animation-duration:{dur:.2f}s"/>'
         for x, y, r, z, d, dur in stars(seed=2026)
     )
+    shooters = "\n".join(
+        f'    <line class="shoot" x1="{x1}" y1="{y1}" x2="{x1 + (x2 - x1) * 0.28:.0f}" y2="{y1 + (y2 - y1) * 0.28:.0f}" '
+        f'stroke="url(#sg{theme})" stroke-width="1.4" stroke-linecap="round" '
+        f'style="--dx:{(x2 - x1) * 0.72:.0f}px;--dy:{(y2 - y1) * 0.72:.0f}px;animation-delay:{d}s;animation-duration:{per}s"/>'
+        for x1, y1, x2, y2, d, per in SHOOTERS
+    )
+    phrases = "".join(
+        f'<text class="ph{i}" x="{PX:.0f}" y="214" font-family="{MONO}" font-size="15" fill="{t["name"]}" '
+        f'textLength="{len(ph) * CH:.0f}" lengthAdjust="spacingAndGlyphs">{ph}</text>'
+        for i, ph in enumerate(PHRASES)
+    )
     ub_stars = "\n".join(
         f'    <circle class="ubs" cx="{x}" cy="{y}" r="{r}" style="animation-delay:{d}s"/>'
         for (x, y), r, d in zip(UB_POINTS, [2.6, 1.9, 2.2, 1.8, 2.4], [0, 0.6, 1.4, 0.9, 2.0])
@@ -68,17 +116,31 @@ def svg(theme: str) -> str:
     @keyframes blink {{ 50% {{ opacity: 0; }} }}
     .rise {{ animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }}
     @keyframes rise {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: none; }} }}
-    @media (prefers-reduced-motion: reduce) {{ .s, .ubl, .ubs, .caret, .rise {{ animation: none; }} }}
+    .shoot {{ opacity: 0; animation: shoot linear infinite; }}
+    @keyframes shoot {{ 0% {{ opacity: 0; transform: translate(0, 0); }} 1% {{ opacity: 1; }}
+      7% {{ opacity: 0; transform: translate(var(--dx), var(--dy)); }} 100% {{ opacity: 0; transform: translate(var(--dx), var(--dy)); }} }}
+    {typing_css()}
+    @media (prefers-reduced-motion: reduce) {{
+      .s, .ubl, .ubs, .caret, .rise, .shoot, .cm {{ animation: none; }}
+      [class^="ph"] {{ animation: none; clip-path: inset(0 100% 0 0); }} .ph0 {{ clip-path: none; }}
+      .cm {{ transform: translateX({len(PHRASES[0]) * CH:.0f}px); }}
+    }}
   </style>
+  <defs><linearGradient id="sg{theme}" x1="1" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="{t['star']}" stop-opacity="0"/><stop offset="1" stop-color="{t['star']}" stop-opacity=".9"/>
+  </linearGradient></defs>
   <rect width="{W}" height="{H}" rx="12" fill="{t['bg']}"/>
   <g>
 {star_nodes}
   </g>
+{shooters}
   <g class="rise">
     <text x="56" y="112" font-family="{SANS}" font-size="40" font-weight="600" letter-spacing="-0.8" fill="{t['name']}">Samandar Abdugafforov</text>
     <text x="56" y="146" font-family="{SANS}" font-size="18" fill="{t['role']}">AI &amp; Backend Engineer · Tashkent, Uzbekistan</text>
     <text x="56" y="190" font-family="{MONO}" font-size="15" fill="{t['muted']}">~ $ <tspan fill="{t['name']}">whoami</tspan></text>
-    <text x="56" y="214" font-family="{MONO}" font-size="15" fill="{t['name']}">building llm systems, ai agents &amp; backends<tspan class="caret" fill="{t['name']}"> ▍</tspan></text>
+    <text x="56" y="214" font-family="{MONO}" font-size="15" fill="{t['muted']}">building</text>
+    {phrases}
+    <g class="cm"><rect class="caret" x="{PX + 1:.0f}" y="201" width="8" height="17" fill="{t['name']}" opacity=".85"/></g>
   </g>
   <g transform="translate({ox} {oy})">
     <path class="ubl" d="{UB_PATH}"/>
