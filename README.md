@@ -1,78 +1,55 @@
-### Hi there <img src="https://raw.githubusercontent.com/samandareo/samandareo/master/wave.gif" width="20px">, <br /> I am *Samandar Abdugafforov*.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/header-light.svg">
+  <img alt="Samandar Abdugafforov — AI & Backend Engineer · Tashkent, Uzbekistan" src="./assets/header-dark.svg" width="100%">
+</picture>
 
+I build **LLM systems**, **AI agents** and the backends behind them.
 
----
-▫️Product Oriented Developer🧑‍💻<br />
-▫️Main tech-stack Backend Developer(Python)<br />
-▫️ex Front-end Developer🧑‍💻<br />
-▫️Video Creator, Editor, Youtuber📹<br />
+```text
+now       ai & backend engineer @ inctec — ai engine, mcp agents on temporal,
+          multi-tenant identity for an enterprise aiops platform
+building  enterprise rag — bm25 + pgvector hybrid search with reranking
+studying  b.sc. ai solutions & applications, pdp university (2026)
+```
 
----
+### Selected work
 
-<br />
+- **[Enterprise RAG](https://samandareo.uz/projects)** — hybrid search in Postgres: BM25, pgvector and a reranker before the LLM answers.
+- **[UzPlagiat](https://github.com/samandareo/uzplagiat)** — plagiarism detection for Uzbek papers, a low-resource language, with SBERT and FAISS.
+- **[Arif Mart Ask AI](https://samandareo.uz/projects)** — shopping assistant with RAG, function calling and prompt-injection guardrails.
 
-## 🔨 Languages and Tools:
+### Stack
 
-[<img align="left" alt="HTML" width="26px" src="./techs/html.svg" />][html]
-[<img align="left" alt="CSS" width="26px" src="./techs/css.svg" />][css]
-[<img align="left" alt="JavaScript" width="26px" src="./techs/javascript.svg" />][javascript]
-<img align="left" alt="Python" width="26px" src="./techs/python.svg" />
-<img align="left" alt="Java" width="26px" src="./techs/java.svg" />
-<img align="left" alt="NodeJS" width="26px" src="./techs/nodejs.svg" />
-<img align="left" alt="PostgreSQL" width="26px" src="./techs/postgres.svg" />
-[<img align="left" alt="Visual Studio Code" width="26px" src="./techs/vscode.svg" />][vscode]
-[<img align="left" alt="IntelliJ IDEA" width="26px" src="./techs/intellij.svg" />][jetbrains]
-[<img align="left" alt="Powershell" width="26px" src="./techs/powershell.svg" />][powershell]
-<img align="left" alt="Docker" width="26px" src="./techs/docker.svg" />
-[<img align="left" alt="Git" width="26px" src="./techs/git.svg" />][git]
-[<img align="left" alt="GitHub" width="26px" src="./techs/github.svg" />][github]
-<img align="left" alt="AWS" width="26px" src="./techs/aws.svg" />
-[<img align="left" alt="Heroku" width="26px" src="./techs/heroku.svg" />][heroku]
-<img align="left" alt="Console" width="26px" src="./techs/console.svg" />
-[<img align="left" alt="Android" width="26px" src="./techs/android.svg" />][android]
-[<img align="left" alt="Linux" width="26px" src="./techs/linux.svg" />][linux]
-[<img align="left" alt="Windows" width="26px" src="./techs/windows 10.svg" />][windows]
-<img align="left" alt="Social Engineering" width="26px" src="./techs/social engineering.svg" />
+```text
+ai        openai · anthropic · litellm · mcp · rag · pgvector · faiss · transformers
+backend   python · fastapi · temporal · kafka · postgres · mongodb · redis · clickhouse
+frontend  typescript · react · next.js · react native · flutter
+```
 
-<br />
-<br />
+### Commits, as stars
 
-<br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/samandareo/samandareo/output/commit-stars-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/samandareo/samandareo/output/commit-stars-light.svg">
+  <img alt="GitHub contributions in the last year, drawn as a star map" src="https://raw.githubusercontent.com/samandareo/samandareo/output/commit-stars-dark.svg" width="100%">
+</picture>
 
 <details>
+<summary>stats</summary>
+<br>
 
-  <summary>⚜ Top Langs</summary>
-  
-  <br />
-  
-  ![Top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&theme=algolia)
-  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=EDEDED&text_color=A1A1A1&icon_color=EDEDED">
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&hide_border=true&bg_color=FFFFFF&title_color=1F2328&text_color=59636E&icon_color=1F2328" height="165">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&layout=compact&hide_border=true&bg_color=0A0A0A&title_color=EDEDED&text_color=A1A1A1">
+  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=samandareo&layout=compact&hide_border=true&bg_color=FFFFFF&title_color=1F2328&text_color=59636E" height="165">
+</picture>
+
 </details>
 
+---
 
-<br />
-
-
-
-
-![Samandar's GitHub stats](https://github-readme-stats.vercel.app/api?username=samandareo&show_icons=true&theme=algolia)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Samandareo&theme=algolia&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
-
-![Snake animation](https://github.com/samandareo/samandareo/blob/main/snake.svg)
-
-
-
-
-[html]: https://www.w3schools.com/html/default.asp
-[css]: https://www.w3schools.com/css/default.asp
-[javascript]: https://www.javascript.com/
-[vscode]: https://code.visualstudio.com/
-[jetbrains]: https://www.jetbrains.com/
-[powershell]: https://docs.microsoft.com/en-us/powershell/
-[git]: https://git-scm.com/
-[github]: https://github.com
-[heroku]: https://www.heroku.com/
-[android]: https://www.android.com/
-[linux]: https://www.linux.org/
-[windows]: https://www.microsoft.com/en-us/windows
+[samandareo.uz](https://samandareo.uz) · [linkedin](https://www.linkedin.com/in/samandareo) · [telegram](https://t.me/samandareo) · [email](mailto:sam.abdugafforov@gmail.com)
